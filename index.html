@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chào Mừng Ngày Phụ Nữ Việt Nam 20/11</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="product-img">
+            <img src="./ngayphunuvietnam.png" 
+            alt="" height="420" width="327">
+        </div>
+        <div class="product-info">
+            <div class="product-text">
+                <h1>Chào Mừng Ngày Phụ Nữ Việt Nam</h1>
+                <div id="qrcode"></div>
+                <script>
+// 1. ĐẶT ĐƯỜNG LINK VIDEO CỦA BẠN VÀO ĐÂY (thay thế dòng này)
+var video_url = "https://youtube.com/shorts/yWzyRmUpC-U?feature=share"; 
+
+// 2. Kích hoạt tạo mã QR trong khung "qrcode"
+var qrcode = new QRCode(document.getElementById("qrcode"), {
+    text: video_url,    // Nội dung Mã QR sẽ mã hóa (chính là đường link video)
+    width: 100,         // Chiều rộng mã QR (tính bằng pixel)
+    height: 100,        // Chiều cao mã QR (tính bằng pixel)
+    colorDark : "#000000",   // Màu của các ô vuông đen (mã QR)
+    colorLight : "#ffffff",  // Màu nền trắng của mã QR
+    correctLevel : QRCode.CorrectLevel.H // Mức độ sửa lỗi (cao nhất)
+});
+</script>
+                <p>
+    Chúc mừng người phụ nữ vĩ đại nhất đời con!
+<br>
+Cảm ơn mẹ vì tất cả sự hy sinh và yêu thương vô điều kiện.
+<br>
+Mong mẹ luôn an yên, khỏe mạnh, và tận hưởng trọn vẹn niềm vui bên gia đình mình.
+<br>
+Mẹ hãy luôn tự hào về những gì mẹ đã làm nhé!
+                </p>
+            </div>
+
+            <div class="product-btn">
+                <!-- <p><span>Vô Giá</span></p> -->
+                <button type="button">
+                    Tặng Quà
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
